@@ -1,5 +1,17 @@
+import os
 from google.cloud import storage
 
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\kings\Documents\projects\cloud_storage\serviceKeyGoogle.json"
+
+# storage_client = storage.Client()
+
+# my_bucket = "my-ebay-laptop-prices"
+
+# bucket = storage_client.create_bucket(my_bucket)
+
+# msg = f"Bucket with name {bucket.name} has been created"
+
+# print(msg)
 
 def create_bucket_class_location(bucket_name):
     """
@@ -21,4 +33,4 @@ def create_bucket_class_location(bucket_name):
     )
     return new_bucket
 
-create_bucket_class_location('ebay_products')
+create_bucket_class_location('ebay-products-prices')

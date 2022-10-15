@@ -34,3 +34,4 @@ def create_bucket_class_location(bucket_name):
     return new_bucket
 
 create_bucket_class_location('ebay-products-prices')
+create_bucket_class_location('amazon-products-prices')

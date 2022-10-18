@@ -3,16 +3,6 @@ from google.cloud import storage
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\kings\Documents\projects\cloud_storage\serviceKeyGoogle.json"
 
-# storage_client = storage.Client()
-
-# my_bucket = "my-ebay-laptop-prices"
-
-# bucket = storage_client.create_bucket(my_bucket)
-
-# msg = f"Bucket with name {bucket.name} has been created"
-
-# print(msg)
-
 def create_bucket_class_location(bucket_name):
     """
     Create a new bucket in the US region with the coldline storage
@@ -35,3 +25,17 @@ def create_bucket_class_location(bucket_name):
 
 create_bucket_class_location('ebay-products-prices')
 create_bucket_class_location('amazon-products-prices')
+
+
+
+
+
+# storage_client = storage.Client()
+
+# my_bucket = "my-ebay-laptop-prices"
+
+# bucket = storage_client.create_bucket(my_bucket)
+
+# msg = f"Bucket with name {bucket.name} has been created"
+
+# print(msg)

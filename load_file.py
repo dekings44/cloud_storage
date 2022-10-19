@@ -22,8 +22,8 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
         f"File {source_file_name} uploaded to {destination_blob_name}."
     )
 
-source_file_name = "../ebay_prices/ebay_laptops.csv"
+source_file_name = "../ebay_prices/laptops.csv"
 bucket_name = "my-ebay-laptop-prices"
-destination_blob_name = "my_ebay_laptops.csv"
+destination_blob_name = "laptops.csv"
 
 upload_blob(bucket_name, source_file_name, destination_blob_name)

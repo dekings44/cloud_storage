@@ -3,6 +3,9 @@
 # Imports the Google Cloud client library
 from google.cloud import storage
 import os
+import io
+from io import BytesIO
+import pandas as pd
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\kings\Documents\projects\cloud_storage\serviceKeyGoogle.json"
 
@@ -26,4 +29,4 @@ def write_read(bucket_name, blob_name):
     with blob.open("r") as f:
         print(f.read())
 
-write_read("my-ebay-laptop-prices", "my_ebay_laptops.csv")
+write_read("my-ebay-laptop-prices", "laptops.csv")

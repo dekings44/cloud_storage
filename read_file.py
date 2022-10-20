@@ -26,7 +26,7 @@ def write_read(bucket_name, blob_name):
     # with blob.open("w") as f:
     #     f.write("Hello world")
 
-    with blob.open("r") as f:
+    with blob.open("r", encoding="utf8") as f:
         print(f.read())
 
 write_read("my-ebay-laptop-prices", "laptops.csv")
